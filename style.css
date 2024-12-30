@@ -8,11 +8,10 @@ body {
 }
 
 header {
-    background-color: #ffc107;
-    color: #000;
-    text-align: center;
-    padding: 1em 0;
-    border-bottom: 2px solid #ffb300;
+    color: #357ABD; /* A light marine blue shade */
+    font-weight: bold;
+    font-size: 2.5em;
+    text-transform: uppercase; /* Optional */
 }
 
 main {
@@ -92,21 +91,31 @@ main {
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
+    text-align: center; /* Center-aligns the text */
 }
 
 .social ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: inline-block; /* Ensures the list doesn't stretch across the page */
+    text-align: left; /* Aligns list items to the left for better readability */
+    margin: 0 auto;
+}
+
+.social ul li {
+    margin: 5px 0; /* Adds spacing between the list items */
 }
 
 .social ul a {
     color: #007bff;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
+
+.social ul a:hover {
+    color: #0056b3;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
